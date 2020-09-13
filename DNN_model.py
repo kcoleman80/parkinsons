@@ -39,10 +39,10 @@ import cv2
 # In[14]:
 
 
-spirals_train_folder = '/Users/kellymclean/Parkinsons/drawings/spiral/training'
-spirals_val_folder = '/Users/kellymclean/Parkinsons/drawings/spiral/testing'
-waves_train_folder = '/Users/kellymclean/Parkinsons/drawings/wave/training'
-waves_val_folder = '/Users/kellymclean/Parkinsons/drawings/wave/testing'
+spirals_train_folder = '/drawings/spiral/training'
+spirals_val_folder = '/drawings/spiral/testing'
+waves_train_folder = 'drawings/wave/training'
+waves_val_folder = '/drawings/wave/testing'
 
 
 # In[15]:
@@ -174,7 +174,7 @@ result=spiral_model.fit_generator(spiral_train_generator,
 
 
 #here's how to load/save
-spiral_model.save('/Users/kellymclean/Parkinsons/nopamine_model_spirals.h5')
+spiral_model.save('model_spirals.h5')
 
 
 # # Network for waves
@@ -201,7 +201,7 @@ waves_model.fit_generator(wave_train_generator,
 # In[28]:
 
 
-waves_model.save('/Users/kellymclean/Parkinsons/nopamine_model_waves.h5')
+waves_model.save('model_waves.h5')
 
 
 # In[ ]:
